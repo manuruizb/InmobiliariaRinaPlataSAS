@@ -14,6 +14,6 @@ class PropiedadesViewset(viewsets.ModelViewSet):
         filters.SearchFilter,
         filters.OrderingFilter,
     ]
-    filterset_fileds = '__all__'
-    search_fields = '__all__'
-    ordering_fields = '__all__'
+    filterset_fileds = ('__all__')
+    search_fields = ('tipoDePropiedad', 'valor', 'direccion', 'status','idPropetario__document', 'idEmpleado__idEmpleado')#('valor', 'tipoDePropiedad')
+    ordering_fields = ('__all__')
